@@ -1,8 +1,6 @@
 # 👽 .dotfiles & new system checklist
 
-I created these files by cobbling together practices from some other folks on the web. Use at your own peril
-
-There's still a lot I want to do with these, especially setting up a script to safely and automatically run most of this. But this is a start. At the moment, this is probably most useful for setting up a new machine.
+I created these files by cobbling together practices from some other folks on the web. Use at your own peril. At some point it'd be cool to set this up to be run automatically. This will do for now.
 
 ## Checklist
 
