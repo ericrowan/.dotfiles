@@ -4,45 +4,65 @@ I created these files by cobbling together practices from some other folks on th
 
 There's still a lot I want to do with these, especially setting up a script to safely and automatically run most of this. But this is a start. At the moment, this is probably most useful for setting up a new machine.
 
-## How to Use
+## Checklist
 
-1. On a new Mac, make sure the following is installed before proceeding:
+### 1. XCode / Command Line Tools
 
-  - XCode or Command Line Tools
+On a new Mac, make sure the following is installed before proceeding:
 
-1. Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
+- XCode or Command Line Tools
 
-  What's included (the noteworthy stuff):
+### 2. Install Homebrew
 
-  - Caskroom
-  - Node
-  - Fish (shell)
+Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
 
-1. Instal utilities and apps with Homebrew: `sh brew.sh`
+What's included (the noteworthy stuff):
 
-  Some of the apps:
+- Caskroom
+- Node
+- Fish (shell)
 
-  - Atom
-  - Dash
-  - Dropbox
-  - Slack
-  - Vagrant
-  - VirtualBox
+### 3. Instal utilities and apps (using Homebrew)
 
-1. Install some global NPM packages: `sh npm.sh`
+Run: `sh brew.sh`
+
+- Atom
+- Dash
+- Dropbox
+- Slack
+- Vagrant
+- VirtualBox
+- etc.
+
+### 4. Install NPM packages
+
+Install global NPM packages: `sh npm.sh`
 
   - Bower
   - Grunt
   - Gulp
   - Yeoman
 
-1. Run OS X defaults script: `sh osx-defaults.sh`
+### 5. Run OS X defaults script
 
-  **Note:** This kind of stuff is highly personal. If you're cloning or forking this repo, you should read through the script before running.
+Run: `sh osx-defaults.sh`
 
-1. Configure the Terminal
+**Note:** This kind of stuff is highly personal. If you're cloning or forking this repo, you should read through the script before running.
 
-  - Change default shell to Fish: `chsh -s /usr/local/bin/fish`
-  - Import custom Terminal theme
+6. Configure the Terminal with Fish
 
-1. Symlinks (TODO)
+I like Fish, you may not. I think it makes life easier, but then again, I'm just a designer :/
+
+- Change default shell to Fish: `chsh -s /usr/local/bin/fish`
+- Import custom Terminal theme
+
+7. Configure symlinks
+
+Eventually I'd like for this to happen automatically. For the time being, here's how to do it:
+
+For the following files, run: `ln -s [original/path] ~/`
+
+- .gitconfig
+- .gitignore
+
+For the Fish config, run: `ln -s ln -s /Users/[user]/.dotfiles/.config/fish/config.fish /Users/[user]/.config/fish`
