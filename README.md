@@ -12,35 +12,37 @@ On a new Mac, make sure the following is installed before proceeding:
 
 - XCode or Command Line Tools
 
-### 2. Secure Git(Hub) access
+### 2. Secure Git(Hub/Lab) access
 
-- Generate new SSH key
+- [Generate new SSH key](https://help.github.com/articles/generating-ssh-keys/)
 
 ### 3. Install Homebrew
 
 Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
 
-What's included (the noteworthy stuff):
+### 4. Instal dependencies and apps
 
-- Caskroom
-- Node
-- Fish (shell)
+#### Homebrew & Caskroom
 
-### 4. Instal utilities and apps (using Homebrew & Caskroom)
+Run: `sh brew.sh`. What's included (the noteworthy stuff):
 
-Run: `sh brew.sh`
+- Homebrew dependencies
+  - Caskroom
+  - Node
+  - Fish (shell)
 
-- Atom
-- Dash
-- Dropbox
-- Slack
-- Vagrant
-- VirtualBox
-- etc.
+- Apps via Caskroom (most symlink to ~/Applications instead of /Applications)
+  - Atom
+  - Dash
+  - Dropbox
+  - Slack
+  - Vagrant
+  - VirtualBox
+  - etc.
 
-### 5. Install NPM packages
+#### npm
 
-Install global NPM packages: `sh npm.sh`
+Run: `sh npm.sh`
 
   - Bower
   - Grunt
