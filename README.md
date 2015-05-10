@@ -1,4 +1,4 @@
-# ⚡︎ .dotfiles & new system checklist
+# 👽 .dotfiles & new system checklist
 
 I created these files by cobbling together practices from some other folks on the web. Use at your own peril
 
