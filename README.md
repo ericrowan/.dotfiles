@@ -10,7 +10,9 @@ There's still a lot I want to do with these, especially setting up a script to s
 
   - XCode or Command Line Tools
 
-1. Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
+1. Open Terminal and install Homebrew:
+
+  `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
 
   What's included (the noteworthy stuff):
 
@@ -31,10 +33,10 @@ There's still a lot I want to do with these, especially setting up a script to s
 
 1. Install some global NPM packages: `sh npm.sh`
 
-- Bower
-- Grunt
-- Gulp
-- Yeoman
+  - Bower
+  - Grunt
+  - Gulp
+  - Yeoman
 
 1. Run OS X defaults script: `sh osx-defaults.sh`
 
