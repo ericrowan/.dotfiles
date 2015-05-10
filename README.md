@@ -10,9 +10,7 @@ There's still a lot I want to do with these, especially setting up a script to s
 
   - XCode or Command Line Tools
 
-1. Open Terminal and install Homebrew:
-
-  `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
+1. Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
 
   What's included (the noteworthy stuff):
 
