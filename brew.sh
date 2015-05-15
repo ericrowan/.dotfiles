@@ -9,6 +9,7 @@ brew upgrade --all
 # Install common packages
 brew install 'caskroom/cask/brew-cask'
 brew install 'fish'
+brew install 'git'
 brew install 'node'
 brew install 'ruby'
 brew install 'tree'
