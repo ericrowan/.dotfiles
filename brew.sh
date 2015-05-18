@@ -10,6 +10,7 @@ brew upgrade --all
 brew install 'caskroom/cask/brew-cask'
 brew install 'fish'
 brew install 'git'
+brew install 'mongodb'
 brew install 'node'
 brew install 'ruby'
 brew install 'tree'
