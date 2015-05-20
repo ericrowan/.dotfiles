@@ -16,6 +16,7 @@ brew install 'ruby'
 brew install 'tree'
 
 # Install apps I use all the time
+brew cask install 'appcleaner'
 brew cask install 'atom'
 brew cask install 'brackets'
 brew cask install 'dash'
