@@ -55,7 +55,7 @@ Run: `sh osx-defaults.sh`
 
 ### 7. Setup Fish
 
-I like Fish, you may not. I think it makes life easier, but then again, I'm just a designer :/
+I like Fish, you may not. That doesn't make you a bad person.
 
 - Change default shell to Fish: `chsh -s /usr/local/bin/fish`
 - Import custom Terminal theme
