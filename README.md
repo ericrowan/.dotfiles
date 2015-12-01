@@ -76,3 +76,11 @@ For the following files, run: `ln -s [original/path] ~/`
 - osx-defaults.sh
 
 For the Fish config, run: `ln -s ln -s /Users/[user]/.dotfiles/.config/fish/config.fish /Users/[user]/.config/fish`
+
+### 9. Helpful commands
+
+I'd also like for this to happen automatically (daily). 
+
+- `brew doctor` - Checks Homebrew for issues
+- `brew update` - Updates any brew formulae
+- `brew cask update --all` - Updates any cask apps
