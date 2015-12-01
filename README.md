@@ -43,7 +43,7 @@ Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubuse
 
 #### npm
 
-Run: `sh npm.sh`
+Run: `sh .dotfiles/npm.sh`
 
   - Bower
   - Grunt
