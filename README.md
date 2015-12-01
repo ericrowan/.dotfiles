@@ -25,7 +25,7 @@ Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubuse
 #### Homebrew & Caskroom
 
 1. Clone this repo into your home directory.
-2. Run: `sh brew.sh`. What's included (the noteworthy stuff):
+2. Run: `sh .dotfiles/brew.sh`. What's included (the noteworthy stuff):
 
 - Homebrew dependencies
   - Caskroom
