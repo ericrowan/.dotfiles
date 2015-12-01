@@ -69,6 +69,8 @@ Eventually I'd like for this to happen automatically. For the time being, here's
 
 For the following files, run: `ln -s [original/path] ~/`
 
+*Example: `ln -s ~/.dotfiles/.gitconfig ~/`*
+
 - .gitconfig
 - .gitignore
 - brew.sh
