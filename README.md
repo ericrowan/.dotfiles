@@ -52,7 +52,7 @@ Run: `sh .dotfiles/npm.sh`
 
 ### 6. Run OS X defaults script
 
-Run: `sh osx-defaults.sh`
+Run: `sh .dotfiles/osx-defaults.sh`
 
 **Note:** This kind of stuff is highly personal. If you're cloning or forking this repo, you should read through the script before running.
 
