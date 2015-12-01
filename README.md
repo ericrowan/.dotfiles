@@ -1,6 +1,8 @@
 # 👽 .dotfiles & new system checklist
 
-I created these files by cobbling together practices from some other folks on the web. Use at your own peril. At some point it'd be cool to set this up to be run automatically. This will do for now.
+I created these files by cobbling together practices from some other folks on the web. Use at your own peril. At some point it'd be cool to set all this up to be run automatically. This will do for now.
+
+**This is updated for OS X El Capitan.**
 
 ## Checklist
 
