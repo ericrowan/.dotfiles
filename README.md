@@ -18,6 +18,8 @@ On a new Mac, make sure the following is installed before proceeding:
 
 Open Terminal and install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
 
+__Note:__ I had to run this several times in OS X 10.11.1 for some reason.
+
 ### 4. Instal dependencies and apps
 
 #### Homebrew & Caskroom
