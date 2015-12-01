@@ -61,7 +61,7 @@ Run: `sh .dotfiles/osx-defaults.sh`
 I like Fish, you may not. That doesn't make you a bad person.
 
 - Change default shell to Fish: `chsh -s /usr/local/bin/fish`
-- Import custom Terminal theme
+- Import custom Terminal theme. I like [this one](https://github.com/mdo/ocean-terminal).
 
 ### 8. Configure symlinks
 
