@@ -67,18 +67,6 @@ I like Fish, you may not. That doesn't make you a bad person.
 
 ### 8. Configure symlinks
 
-Eventually I'd like for this to happen automatically. For the time being, here's how to do it:
-
-For the following files, run: `ln -s [original/path] ~/`
-
-*Example: `ln -s ~/.dotfiles/.gitconfig ~/`*
-
-- .gitconfig
-- .gitignore
-- brew.sh
-- npm.sh
-- osx-defaults.sh
-
 For the Fish config, run: `ln -s ln -s /Users/[user]/.dotfiles/.config/fish/config.fish /Users/[user]/.config/fish`
 
 ### 9. Helpful commands
