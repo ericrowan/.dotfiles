@@ -21,5 +21,8 @@ npm update -g
 echo 'Updating gems ...'
 gem update --system
 
+# update Homestead
+cd ~/projects/Homestead ; git pull
+
 # finished
 osascript -e 'display notification "Local dev environment cleaned and/or updated." with title "System Updated"'
