@@ -69,6 +69,7 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
 
 
 # Git commands
+alias add='git add .'
 alias log='git log'
 alias diff='git diff'
 alias branch='git branch'
