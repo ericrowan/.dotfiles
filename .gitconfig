@@ -2,12 +2,12 @@
  name = Eric Rowan
  email = erow80@gmail.com
 
-[alias]
-   a = add
-   c = commit
-  co = checkout
-  st = status
-  br = branch
+# [alias]
+#    a = add
+#    c = commit
+#   co = checkout
+#   st = status
+#   br = branch
 
 [color]
     ui = auto

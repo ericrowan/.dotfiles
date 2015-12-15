@@ -10,6 +10,11 @@ set -g -x PATH $PATH /usr/local/bin
 set -g -x PATH $PATH /usr/bin /bin /usr/sbin /usr/local/sbin /sbin
 
 
+# Add rbenv support
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
+
 
 # Add Composer's global binaries to PATH
 if test -z "$COMPOSER_BIN_PATH"
@@ -29,7 +34,6 @@ if test -z "$COMPOSER_BIN"
 end
 
 
-
 # Setup my custom Fish prompt
 set _fish_git_prompt_color_branch green
 
@@ -45,6 +49,7 @@ function fish_prompt
   set -g __fish_git_prompt_showcolorhints true
   printf '%s ' (__fish_git_prompt)
 end
+
 
 # Aliases
 
@@ -62,23 +67,24 @@ alias ll='ls -al'
 alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-## Git commands
-# alias log='git log'
-# alias diff='git diff'
-# alias branch='git branch'
-# alias st='git status'
-# alias fetch='git fetch'
-# alias push='git push origin head'
-# alias pull='git pull'
-# alias fp='fetch && pull'
-# alias gmm='git merge master'
-# alias gmghp='git merge gh-pages'
-# alias recent='git for-each-ref --sort=-committerdate refs/heads/'
-# alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 
-## Git branch switching
-# alias master='git co master'
-# alias ghp='git co gh-pages'
+# Git commands
+alias log='git log'
+alias diff='git diff'
+alias branch='git branch'
+alias st='git status'
+alias fetch='git fetch'
+alias push='git push origin head'
+alias pull='git pull'
+alias fp='fetch ; pull'
+alias gmm='git merge master'
+#alias gmghp='git merge gh-pages'
+alias recent='git for-each-ref --sort=-committerdate refs/heads/'
+alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 
-## Build tools
-# alias gd='grunt dist'
+# Git branch switching
+alias master='git co master'
+#alias ghp='git co gh-pages'
+
+# Build tools
+#alias gd='grunt dist'
