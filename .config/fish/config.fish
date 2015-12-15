@@ -1,6 +1,3 @@
-export PATH="/usr/local/sbin:$PATH"
-
-
 # NOTE: There is probably a sexier nicer way to do this, but until I figure that out I am manually unsetting here.
 # Unsets PATH
 set -g -x PATH
@@ -10,7 +7,7 @@ set -g -x PATH
 set -g -x PATH $PATH /usr/local/bin
 
 # Sets necessary PATH defaults
-set -g -x PATH $PATH /usr/bin /bin /usr/sbin /sbin
+set -g -x PATH $PATH /usr/bin /bin /usr/sbin /usr/local/sbin /sbin
 
 
 
