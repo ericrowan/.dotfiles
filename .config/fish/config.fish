@@ -1,6 +1,39 @@
-set -x PATH /usr/local/bin $PATH
+export PATH="/usr/local/sbin:$PATH"
 
-# Setup my custom Fish promt
+
+# NOTE: There is probably a sexier nicer way to do this, but until I figure that out I am manually unsetting here.
+# Unsets PATH
+set -g -x PATH
+
+# This allows us to use Homebrew versions of things (like git) rather than the pre-installed or XCode installed versions.
+# See http://blog.grayghostvisuals.com/git/how-to-keep-git-updated/ for reference.
+set -g -x PATH $PATH /usr/local/bin
+
+# Sets necessary PATH defaults
+set -g -x PATH $PATH /usr/bin /bin /usr/sbin /sbin
+
+
+
+# Add Composer's global binaries to PATH
+if test -z "$COMPOSER_BIN_PATH"
+  set -gx COMPOSER_BIN_PATH $HOME/.composer/vendor/bin
+end
+set PATH $COMPOSER_BIN_PATH $PATH
+
+# get composer path
+if test -z "$COMPOSER_BIN"
+  if type "composer.phar" > /dev/null
+    set -gx COMPOSER_BIN (which composer.phar)
+  else if type "composer" > /dev/null
+    set -gx COMPOSER_BIN (which composer)
+  else
+    echo "FAILED to find Composer! Please install composer.phar to your PATH."
+  end
+end
+
+
+
+# Setup my custom Fish prompt
 set _fish_git_prompt_color_branch green
 
 function fish_prompt
