@@ -1,3 +1,6 @@
+# make default system shell fish
+set SHELL (which fish)
+
 # NOTE: There is probably a sexier nicer way to do this, but until I figure that out I am manually unsetting here.
 # Unsets PATH
 set -g -x PATH
