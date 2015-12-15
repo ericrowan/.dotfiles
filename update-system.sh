@@ -2,16 +2,16 @@
 
 # update and clean up homebrew packages
 echo 'Updating and cleaning up Homebrew ...'
-brew update ;
+brew update
 brew upgrade --all
-brew prune ;
-brew doctor ;
+brew prune
+brew doctor
 
 # update and cleanup caskroom packages
 echo 'Updating and cleaning up Caskroom packages ...'
-brew cask cleanup ;
-brew cask update ;
-brew cask doctor ;
+brew cask cleanup
+brew cask update
+brew cask doctor
 
 # update npm packages
 echo 'Updating npm ...'
