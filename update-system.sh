@@ -19,7 +19,7 @@ npm update -g
 
 # update gems
 echo 'Updating gems ...'
-gem update
+gem update --system
 
 # finished
 osascript -e 'display notification "Local dev environment cleaned and/or updated." with title "System Updated"'
