@@ -13,6 +13,10 @@ set -g -x PATH $PATH /usr/local/bin
 set -g -x PATH $PATH /usr/bin /bin /usr/sbin /usr/local/sbin /sbin
 
 
+# PHP vendor directory
+set -g -x PATH $PATH ./vendor/bin
+
+
 # Add rbenv support
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
