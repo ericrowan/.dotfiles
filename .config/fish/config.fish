@@ -12,16 +12,16 @@ set -g -x PATH $PATH /usr/local/bin
 # Sets necessary PATH defaults
 set -g -x PATH $PATH /usr/bin /bin /usr/sbin /usr/local/sbin /sbin
 
-
 # PHP vendor directory
 set -g -x PATH $PATH ./vendor/bin
 
+# for a docker-machine instance named 'default'
+eval (docker-machine env default)
 
 # Add rbenv support
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
-
 
 # Add Composer's global binaries to PATH
 if test -z "$COMPOSER_BIN_PATH"
@@ -40,7 +40,6 @@ if test -z "$COMPOSER_BIN"
   end
 end
 
-
 # Setup my custom Fish prompt
 set _fish_git_prompt_color_branch green
 
@@ -57,7 +56,6 @@ function fish_prompt
   printf '%s ' (__fish_git_prompt)
 end
 
-
 # Aliases
 
 ## Shortcuts
@@ -73,7 +71,6 @@ alias ll='ls -al'
 ### Hide/show hidden files
 alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-
 
 # Git commands
 alias add='git add .'
