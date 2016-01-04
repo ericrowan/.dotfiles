@@ -16,7 +16,7 @@ set -g -x PATH $PATH /usr/bin /bin /usr/sbin /usr/local/sbin /sbin
 set -g -x PATH $PATH ./vendor/bin
 
 # for a docker-machine instance named 'default'
-eval (docker-machine env default)
+# eval (docker-machine env default)
 
 # Add rbenv support
 set PATH $HOME/.rbenv/bin $PATH
