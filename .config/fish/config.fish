@@ -46,7 +46,7 @@ set _fish_git_prompt_color_branch green
 function fish_prompt
   set --erase fish_greeting
   printf '\n'
-  printf '⚡︎ '
+  printf '> '
   set last_status $status
   printf '%s' (prompt_pwd)
 
