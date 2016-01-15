@@ -18,6 +18,15 @@ set -g -x PATH $PATH ./vendor/bin
 # for a docker-machine instance named 'default'
 # eval (docker-machine env default)
 
+# add fasd 
+function -e fish_preexec _run_fasd
+  fasd --proc (fasd --sanitize "$argv") > "/dev/null" 2>&1
+end
+
+function j
+  cd (fasd -d -e 'printf %s' "$argv")
+end
+
 # Add rbenv support
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
