@@ -1,12 +1,15 @@
 #!/bin/sh
 
 # Make sure we’re using the latest Homebrew
+
 brew update
 
 # Upgrade any already-installed formulae
+
 brew upgrade --all
 
 # Install common packages
+
 brew install 'caskroom/cask/brew-cask'
 brew install 'fish'
 brew install 'git'
@@ -15,10 +18,12 @@ brew install 'node'
 brew install 'ruby'
 brew install 'tree'
 
-# Install apps I use all the time
+# Install apps I frequently use
+
 brew cask install 'appcleaner'
 brew cask install 'atom'
 brew cask install 'brackets'
+brew cask install 'colorpicker-skalacolor'
 brew cask install 'dash'
 brew cask install 'dashlane'
 brew cask install 'dropbox'
@@ -36,11 +41,11 @@ brew cask install 'skype'
 brew cask install 'slack'
 brew cask install 'spectacle'
 brew cask install 'spotify'
-# brew cask install 'totalterminal'
 brew cask install 'vagrant'
 brew cask install 'virtualbox'
 brew cask install 'vlc'
 
 # Maintenance
+
 brew cleanup
 brew doctor
