@@ -60,7 +60,7 @@ Run: `sh .dotfiles/osx-defaults.sh`
 
 ### 7. Setup Fish
 
-I like Fish, you may not. That doesn't make you a bad person.
+I like Fish. I don't know if it's better than ZSH or anything else for that matter. It works for me at the moment.
 
 - Change default shell to Fish: `chsh -s /usr/local/bin/fish`
 - Import custom Terminal theme if you like, or use the one provided.
