@@ -15,8 +15,11 @@ set -g -x PATH $PATH /usr/bin /bin /usr/sbin /usr/local/sbin /sbin
 # PHP vendor directory
 set -g -x PATH $PATH ./vendor/bin
 
+# Docker
 # for a docker-machine instance named 'default'
 # eval (docker-machine env default)
+# alias dockerexc='function _docker_exec(){ service=$1; shift; docker exec -it $(docker-compose ps -q ${service}) "$@" };_docker_exec'
+function dockerexc; set service $argv[1]; set argv $argv[2..-1]; docker exec -it (docker ps -q -f name="$service") $argv; end;
 
 # Add rbenv support
 set PATH $HOME/.rbenv/bin $PATH
